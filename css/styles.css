@@ -64,6 +64,7 @@ button {
   border: none;
 }
 
+/* контейнеры */
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -79,6 +80,9 @@ button {
 }
 
 h2 {
+  margin-bottom: 72px;
+
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -87,6 +91,8 @@ h2 {
 }
 
 h3 {
+  margin-bottom: 8px;
+
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -101,7 +107,9 @@ p {
   letter-spacing: 0.02em;
 }
 
+/* логотип */
 .logo {
+  margin: 24px 0;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -120,7 +128,8 @@ p {
 
 .site-nav {
   display: flex;
-  align-items: center;
+  column-gap: 40px;
+  margin: 24px 0 24px 76px;
 }
 
 .site-nav-item {
@@ -138,6 +147,12 @@ p {
   color: #404bbf;
 }
 
+/* навигация авторизации */
+
+.auth-nav {
+  display: flex;
+  margin: 24px 0;
+}
 .auth-nav-item {
   font-size: 16px;
   line-height: 1.5;
@@ -148,12 +163,16 @@ p {
 /* герой */
 
 .hero {
+  padding: 188px 472px;
   text-align: center;
+  height: 600px;
 
   background-color: #2e2f42;
 }
 
 .hero-title {
+  margin-bottom: 48px;
+
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -163,10 +182,87 @@ p {
 }
 
 .hero-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  padding: 16px 32px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
+  background-color: #4d5ae5;
   color: #ffffff;
+  border-radius: 4px;
+}
+
+/* характиристики */
+
+.characteristic {
+  padding: 120px 0;
+}
+
+.characteristic-title {
+  display: none;
+}
+
+.characteristic-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.characteristic-item-text {
+  /* max-width: 264px; */
+  /* width: 264px; */
+}
+
+/* команда */
+.team-bg {
+  background-color: #f4f4fd;
+}
+
+.team {
+  padding: 120px 0;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/* портфолио */
+
+.portfolio {
+  padding: 120px 0;
+}
+
+.portfolio-list {
+  flex-wrap: wrap;
+  /* row-gap: 24px;
+  column-gap: 48px; */
+
+  gap: 24px;
+}
+
+.portfolio-item {
+  width: calc((100%-48px) / 3);
+}
+
+/* футер */
+
+.footer {
+  padding: 100px 156px;
+}
+
+.logo-footer {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.portfolio-sing {
+  margin: 32px 0;
+}
+
+.portfolio-sign-title {
+  margin-bottom: 8px;
 }

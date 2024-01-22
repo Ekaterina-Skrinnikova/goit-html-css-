@@ -24,7 +24,8 @@
    
       <header>
         <div class="container flex-container">
-          <a class="logo logo-header" href=""
+          <div class="flex-container">
+            <a class="logo logo-header" href=""
             ><span class="logo-span">WEB</span>STUDIO</a
           >
           <nav>
@@ -34,8 +35,9 @@
               <li class="site-nav-item">Contacts</li>
             </ul>
           </nav>
-
-          <ul class="flex-container auth-nav">
+          </div>
+          
+          <ul class="auth-nav">
             <li>
               <a class="auth-nav-item" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -58,35 +60,35 @@
             <button class="hero-button" type="button">Order Service</button>
           </section>
         </div>
-<div class=container>
+
    <!-- секция характеристик -->
-        <section class="characteristic">
+        <section class="container characteristic">
           <h2 class="characteristic-title">Characteristic</h2>
           <ul class="flex-container">
-            <li>
-              <h3>Strategy</h3>
-              <p>
+            <li class="characteristic-item">
+              <h3 class="characteristic-item-title">Strategy</h3>
+              <p class="characteristic-item-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
-              <h3>Punctuality</h3>
-              <p>
+            <li class="characteristic-item">
+              <h3 class="characteristic-item-title">Punctuality</h3>
+              <p class="characteristic-item-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
-            </li>
-            <li>
-              <h3>Diligence</h3>
-              <p>
+            </li >
+            <li class="characteristic-item">
+              <h3 class="characteristic-item-title">Diligence</h3>
+              <p class="characteristic-item-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
-            </li>
-            <li>
-              <h3>Technologies</h3>
-              <p>
+            </li >
+            <li class="characteristic-item">
+              <h3 class="characteristic-item-title">Technologies</h3>
+              <p class="characteristic-item-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -95,74 +97,86 @@
         </section>
 
         <!-- секция наша команда -->
-        <section class="team">
-          <h2>Our Team</h2>
+        <div class="team-bg">
+          <section class="container team">
+          <h2 class="team-title">Our Team</h2>
           <ul class="flex-container">
-            <li>
+            <li class="team-item">
               <img src="./images/photo-1.jpg" alt="photo employee" />
-              <h3>Mark Guerrero</h3>
-              <p>Product Designer</p>
+              <div>
+                <h3 class="team-item-title">Mark Guerrero</h3>
+                <p>Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-item">
               <img src="./images/photo-2.jpg" alt="photo employee" />
               <h3>Tom Ford</h3>
               <p>Frontend Developer</p>
             </li>
-            <li>
+            <li class="team-item">
               <img src="./images/photo-3.jpg" alt="photo employee" />
               <h3>Camila Garcia</h3>
               <p>Marketing</p>
             </li>
-            <li>
+            <li class="team-item">
               <img src="./images/photo-4.jpg" alt="photo employee" />
               <h3>Daniel Wilson</h3>
               <p>UI Designer</p>
             </li>
           </ul>
         </section>
-
+        </div>
+        
         <!-- секция портфолио -->
-        <section class="portfolio">
-          <h2>Our Portfolio</h2>
-          <ul class="flex-container">
-            <li>
-              <img src="./images/port-1.jpg" alt="" />
-              <h3>Banking App</h3>
+        <section class="container portfolio">
+          <h2 class="portfolio-title">Our Portfolio</h2>
+          <ul class="flex-container portfolio-list">
+            <li class="portfolio-item">
+             <img src="./images/port-1.jpg" alt="" />
+             <div class="portfolio-sing">
+              <h3 class="portfolio-sign-title">Banking App</h3>
               <p>App</p>
+             </div>              
             </li>
             <li>
               <img src="./images/port-2.jpg" alt="" />
-              <h3>Cashless Payment</h3>
+              <div class="portfolio-sing">
+              <h3 class="portfolio-sign-title">Cashless Payment</h3>
               <p>Marketing</p>
+             </div>                            
             </li>
             <li>
               <img src="./images/port-3.jpg" alt="" />
-              <h3>Meditation App</h3>
+              <div class="portfolio-sing">
+              <h3 class="portfolio-sign-title">Meditation App</h3>
               <p>App</p>
+             </div>              
+              
             </li>
             <li>
               <img src="./images/port-4.jpg" alt="" />
-              <h3>Taxi Service</h3>
+              <div class="portfolio-sing">
+             <h3 class="portfolio-sign-title">Taxi Service</h3>
               <p>Marketing</p>
+             </div>  
+              
             </li>
             <li>
               <img src="./images/port-5.jpg" alt="" />
-              <h3>Screen Illustrations</h3>
+              <h3 class="portfolio-sign-title">Screen Illustrations</h3>
               <p>Design</p>
             </li>
             <li>
               <img src="./images/port-6.jpg" alt="" />
-              <h3>Online Courses</h3>
+              <h3 class="portfolio-sign-title">Online Courses</h3>
               <p>Marketing</p>
             </li>
           </ul>
         </section>
-</div>
-       
       </main>
 
-      <footer>
-        <a class="logo" href=""><span class="logo-span">WEB</span>STUDIO</a>
+      <footer class="container footer">
+        <a class="logo logo-footer" href=""><span class="logo-span">WEB</span>STUDIO</a>
         <p>
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
