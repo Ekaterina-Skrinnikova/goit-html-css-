@@ -62,6 +62,7 @@ img {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 /* контейнеры */
@@ -107,21 +108,53 @@ p {
   letter-spacing: 0.02em;
 }
 
+/* соцсети */
+
+.socmedia {
+  display: flex;
+  margin-top: 8px;
+  column-gap: 24px;
+
+  text-align: center;
+}
+.socmedia-svg {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}
+
+.socmedia-svg-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.socmedia-svg:not(:last-child) {
+  margin-right: 24px;
+}
+
+.socmedia-svg-bg:hover,
+.socmedia-svg-bg:focus {
+  background-color: #31d0aa;
+}
+
 /* логотип */
 .logo {
-  margin: 24px 0;
+  padding: 24px 0;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.16;
-  color: #2e2f42;
-}
-
-.logo-span {
   color: #4d5ae5;
 }
 
-.logo-header {
+.logo-span {
+  color: #2e2f42;
 }
 
 /* навигация по сайту */
@@ -129,7 +162,7 @@ p {
 .site-nav {
   display: flex;
   column-gap: 40px;
-  margin: 24px 0 24px 76px;
+  margin-left: 76px;
 }
 
 .site-nav-item {
@@ -137,27 +170,58 @@ p {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.site-nav-link {
+  display: block;
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: #2e2f42;
 }
 
-.site-nav-item:hover,
-.site-nav-item:focus,
-.auth-nav-item:hover,
-.auth-nav-item:focus {
+.site-nav-link:hover,
+.site-nav-link:focus,
+.auth-nav-link:hover,
+.auth-nav-link:focus {
   color: #404bbf;
+}
+
+.site-nav-active::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 
 /* навигация авторизации */
 
 .auth-nav {
   display: flex;
+  column-gap: 40px;
   margin: 24px 0;
 }
-.auth-nav-item {
+
+.auth-nav-item a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.auth-nav-item a:hover,
+.auth-nav-item a:focus {
+  color: #404bbf;
+}
+
+.auth-nav-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* герой */
@@ -167,7 +231,16 @@ p {
   text-align: center;
   height: 600px;
 
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.7),
+      rgba(47, 48, 58, 0.7)
+    ),
+    url(../images/hero.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: #2e2f42; */
 }
 
 .hero-title {
@@ -197,6 +270,11 @@ p {
   border-radius: 4px;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
 /* характиристики */
 
 .characteristic {
@@ -208,11 +286,15 @@ p {
   display: none;
 }
 
+.characteristic-svg {
+  width: 264px;
+}
+
 .characteristic-item:not(:last-child) {
   margin-right: 24px;
 }
 
-/* команда */
+/* ----------------------команда */
 .team-bg {
   background-color: #f4f4fd;
 }
@@ -222,16 +304,12 @@ p {
   padding-bottom: 120px;
 }
 
-/* .team-item {
-  border: 4px solid #2e2f42;
-} */
-
 .team-item:not(:last-child) {
   margin-right: 24px;
 }
 
 .team-sign {
-  padding: 32px 0;
+  padding: 32px 16px;
   text-align: center;
   background-color: #ffffff;
 
@@ -240,7 +318,7 @@ p {
   border-radius: 0 0 4px 4px;
 }
 
-/* портфолио */
+/* ---------------------портфолио */
 
 .portfolio {
   padding-top: 120px;
@@ -257,6 +335,20 @@ p {
   width: calc((100%-48px) / 3);
 }
 
+.portfolio img {
+  position: relative;
+}
+
+.portfolio img::after {
+  position: absolute;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+    0px 1px 6px 0px #2e2f4214;
+}
+
 .portfolio-sing {
   padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
@@ -268,14 +360,44 @@ p {
   margin-bottom: 8px;
 }
 
-/* футер */
+/* ---------------------------футер */
 
 .footer {
-  padding: 100px 156px;
+  background-color: #2e2f42;
+}
+
+.footer-container {
+  display: flex;
+  padding: 100px 0;
+}
+
+.footer-logo {
+  width: 264px;
+  margin-right: 120px;
+}
+
+.logo-span {
+  color: #f4f4fd;
 }
 
 .logo-footer {
   display: block;
   margin-top: 0px;
   margin-bottom: 16px;
+}
+
+.footer-text {
+  color: #f4f4fd;
+}
+
+.footer-socmedia-text {
+  margin-bottom: 16px;
+
+  color: #f4f4fd;
+}
+
+.footer-socmedia-svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
 }
