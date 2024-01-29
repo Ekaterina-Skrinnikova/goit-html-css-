@@ -25,7 +25,7 @@
       <div class="container flex-container">
         <div class="flex-container">
           <a class="logo logo-header" href=""
-            >WEB<span class="logo-span">STUDIO</span></a
+            >WEB<span class="logo-span-haeder">STUDIO</span></a
           >
           <nav>
             <ul class="site-nav">
@@ -59,12 +59,10 @@
 
     <main>
       <!-- секция герой -->
-      <div>
-        <section class="hero">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
-        </section>
-      </div>
+      <section class="hero">
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <button class="hero-button" type="button">Order Service</button>
+      </section>
 
       <!-- секция характеристик -->
       <section class="container characteristic">
@@ -304,7 +302,7 @@
       <div class="container footer-container">
         <div class="footer-logo">
           <a class="logo logo-footer" href=""
-            >WEB<span class="logo-span">STUDIO</span></a
+            >WEB<span class="logo-span-footer">STUDIO</span></a
           >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
@@ -339,5 +337,104 @@
         </div>
       </div>
     </footer>
+
+    <!-- бекдроп, модельное окно и форма -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button">
+          <svg class="modal-button-icon">
+            <use
+              href="./images/icons.svg#icon-close"
+              width="8"
+              heigth="8"
+            ></use>
+          </svg>
+        </button>
+
+        <p class="form-text">Leave your contacts and we will call you back</p>
+        <form class="form">
+          <div class="form-field">
+            <label class="form-field-label" for="name">Name</label>
+            <div class="form-field-wrapper">
+              <input
+                class="form-field-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder=""
+              />
+              <svg class="form-field-svg">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field-label" for="phone">Phone</label>
+            <div class="form-field-wrapper">
+              <input
+                class="form-field-input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder=""
+              />
+              <svg class="form-field-svg">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field-label" for="email">Email</label>
+            <div class="form-field-wrapper">
+              <input
+                class="form-field-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder=""
+              />
+              <svg class="form-field-svg">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field-label" for="comment">Coment</label>
+            <textarea
+              class="form-field-input form-field-texterea"
+              name=""
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="form-field">
+            <input
+              class="form-checkbox-input visually-hidden"
+              type="checkbox"
+              id="checkbox"
+            />
+            <label class="form-checkbox-label" name="checkbox" for="checkbox"
+              ><span class="form-checkbox-label-span">
+                <svg
+                  class="form-checkbox-label-span-icon"
+                  width="10"
+                  height="8"
+                >
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="form-checkbox-label-link" href=""
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
+
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
