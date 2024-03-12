@@ -23,24 +23,29 @@
   <body>
     <header>
       <div class="container flex-container">
-        <div class="flex-container">
+        <div class="mobile-flex-container">
           <a class="logo logo-header" href=""
-            >WEB<span class="logo-span-haeder">STUDIO</span></a
+            >web<span class="logo-span-header">studio</span></a
           >
-          <nav>
-            <ul class="site-nav">
-              <li class="site-nav-item">
-                <a class="site-nav-link site-nav-active" href="">Studio</a>
-              </li>
-              <li class="site-nav-item">
-                <a class="site-nav-link" href="">Portfolio</a>
-              </li>
-              <li class="site-nav-item">
-                <a class="site-nav-link" href="">Contacts</a>
-              </li>
-            </ul>
-          </nav>
+          <button class="mobile-btn" type="button">
+            <svg class="" width="24" height="24">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
         </div>
+        <nav>
+          <ul class="site-nav">
+            <li class="site-nav-item">
+              <a class="site-nav-link site-nav-active" href="">Studio</a>
+            </li>
+            <li class="site-nav-item">
+              <a class="site-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="site-nav-item">
+              <a class="site-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
         <ul class="auth-nav">
           <li class="auth-nav-item">
@@ -65,9 +70,9 @@
       </section>
 
       <!-- секция характеристик -->
-      <section class="container characteristic">
+      <section class="container container-section">
         <h2 class="characteristic-title">Characteristic</h2>
-        <ul class="flex-container">
+        <ul class="flex-container characteristic-list">
           <li class="characteristic-item">
             <svg class="characteristic-svg">
               <use href="./images/icons.svg#icon-1"></use>
@@ -111,21 +116,21 @@
         </ul>
       </section>
 
-      <!-- секция наша команда -->
+      <!--------------------------- секция наша команда -->
       <div class="team-bg">
-        <section class="container team">
+        <section class="container container-section">
           <h2 class="team-title">Our Team</h2>
-          <ul class="flex-container">
-            <li class="team-item">
+          <ul class="flex-container team-container">
+            <li class="team-card">
               <img
                 srcset="./images/photo-1@2x.jpg 2x"
                 src="./images/photo-1.jpg"
                 alt="photo employee"
               />
               <div class="team-sign">
-                <h3 class="team-item-title">Mark Guerrero</h3>
-                <p>Product Designer</p>
-                <ul class="socmedia">
+                <h3 class="team-sign-title">Mark Guerrero</h3>
+                <p class="team-sign-text">Product Designer</p>
+                <ul class="socmedia-team">
                   <li class="socmedia-svg-bg">
                     <svg class="socmedia-svg">
                       <use href="./images/icons.svg#instagram"></use>
@@ -149,16 +154,16 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-card">
               <img
                 srcset="./images/photo-2@x.jpg 2x"
                 src="./images/photo-2.jpg"
                 alt="photo employee"
               />
               <div class="team-sign">
-                <h3>Tom Ford</h3>
-                <p>Frontend Developer</p>
-                <ul class="socmedia">
+                <h3 class="team-sign-title">Tom Ford</h3>
+                <p class="team-sign-text">Frontend Developer</p>
+                <ul class="socmedia-team">
                   <li class="socmedia-svg-bg">
                     <svg class="socmedia-svg">
                       <use href="./images/icons.svg#instagram"></use>
@@ -182,16 +187,16 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-card">
               <img
                 srcset="./images/photo-3@2x.jpg 2x"
                 src="./images/photo-3.jpg"
                 alt="photo employee"
               />
               <div class="team-sign">
-                <h3>Camila Garcia</h3>
-                <p>Marketing</p>
-                <ul class="socmedia">
+                <h3 class="team-sign-title">Camila Garcia</h3>
+                <p class="team-sign-text">Marketing</p>
+                <ul class="socmedia-team">
                   <li class="socmedia-svg-bg">
                     <svg class="socmedia-svg">
                       <use href="./images/icons.svg#instagram"></use>
@@ -215,16 +220,16 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-card">
               <img
                 srcset="./images/photo-4@2x.jpg 2x"
                 src="./images/photo-4.jpg"
                 alt="photo employee"
               />
               <div class="team-sign">
-                <h3>Daniel Wilson</h3>
-                <p>UI Designer</p>
-                <ul class="socmedia">
+                <h3 class="team-sign-title">Daniel Wilson</h3>
+                <p class="team-sign-text">UI Designer</p>
+                <ul class="socmedia-team">
                   <li class="socmedia-svg-bg">
                     <svg class="socmedia-svg">
                       <use href="./images/icons.svg#instagram"></use>
@@ -253,7 +258,7 @@
       </div>
 
       <!-- секция портфолио -->
-      <section class="container portfolio">
+      <section class="container container-section">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="flex-container portfolio-list">
           <li class="portfolio-item">
@@ -268,7 +273,7 @@
                   ./images/port-tablet-1@2x.jpg  712w,
                   ./images/port-desktop-1@2x.jpg 720w
                 "
-                sizes="(max-width: 480px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
+                sizes="(max-width: 320px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
                 src="./images/port-mobile-1.jpg"
                 alt=""
               />
@@ -281,7 +286,7 @@
 
             <div class="portfolio-sing">
               <h3 class="portfolio-sign-title">Banking App</h3>
-              <p>App</p>
+              <p class="portfolio-sign-text">App</p>
             </div>
           </li>
           <li class="portfolio-item">
@@ -295,7 +300,7 @@
                   ./images/port-tablet-2@2x.jpg  712w,
                   ./images/port-desktop-2@2x.jpg 720w
                 "
-                sizes="(max-width: 480px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
+                sizes="(max-width: 320px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
                 src="./images/port-mobile-2.jpg"
                 alt=""
               />
@@ -322,7 +327,7 @@
                   ./images/port-tablet-3@2x.jpg  712w,
                   ./images/port-desktop-3@2x.jpg 720w
                 "
-                sizes="(max-width: 480px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
+                sizes="(max-width: 320px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
                 src="./images/port-mobile-3.jpg"
                 alt=""
               />
@@ -349,7 +354,7 @@
                   ./images/port-tablet-4@2x.jpg  712w,
                   ./images/port-desktop-4@2x.jpg 720w
                 "
-                sizes="(max-width: 480px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
+                sizes="(max-width: 320px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
                 src="./images/port-mobile-4.jpg"
                 alt=""
               />
@@ -369,14 +374,14 @@
             <div class="portfolio-item-thumb">
               <img
                 srcset="
-                  ./images/port-mobile-4.jpg     288w,
-                  ./images/port-tablet-4.jpg     356w,
-                  ./images/port-desktop-4.jpg    360w,
-                  ./images/port-mobile-4@2x.jpg  576w,
-                  ./images/port-tablet-4@2x.jpg  712w,
-                  ./images/port-desktop-4@2x.jpg 720w
+                  ./images/port-mobile-5.jpg     288w,
+                  ./images/port-tablet-5.jpg     356w,
+                  ./images/port-desktop-5.jpg    360w,
+                  ./images/port-mobile-5@2x.jpg  576w,
+                  ./images/port-tablet-5@2x.jpg  712w,
+                  ./images/port-desktop-5@2x.jpg 720w
                 "
-                sizes="(max-width: 480px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
+                sizes="(max-width: 320px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
                 src="./images/port-mobile-5.jpg"
                 alt=""
               />
@@ -396,14 +401,14 @@
             <div class="portfolio-item-thumb">
               <img
                 srcset="
-                  ./images/port-mobile-4.jpg     288w,
-                  ./images/port-tablet-4.jpg     356w,
-                  ./images/port-desktop-4.jpg    360w,
-                  ./images/port-mobile-4@2x.jpg  576w,
-                  ./images/port-tablet-4@2x.jpg  712w,
-                  ./images/port-desktop-4@2x.jpg 720w
+                  ./images/port-mobile-6.jpg     288w,
+                  ./images/port-tablet-6.jpg     356w,
+                  ./images/port-desktop-6.jpg    360w,
+                  ./images/port-mobile-6@2x.jpg  576w,
+                  ./images/port-tablet-6@2x.jpg  712w,
+                  ./images/port-desktop-6@2x.jpg 720w
                 "
-                sizes="(max-width: 480px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
+                sizes="(max-width: 320px) 288px, (min-width: 768px) 356px, (min-width:1158px) 360px"
                 src="./images/port-mobile-6.jpg"
                 alt=""
               />
@@ -424,7 +429,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container container-section footer-container">
         <div class="footer-logo">
           <a class="logo logo-footer" href=""
             >WEB<span class="logo-span-footer">STUDIO</span></a
@@ -437,7 +442,7 @@
 
         <div class="footer-socmedia">
           <p class="footer-socmedia-text">Social media</p>
-          <ul class="socmedia">
+          <ul class="socmedia-footer">
             <li class="socmedia-svg-bg">
               <svg class="footer-socmedia-svg">
                 <use href="./images/icons.svg#instagram"></use>
@@ -460,12 +465,31 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <div>
+            <p class="footer-subscribe-text">Subscribe</p>
+            <label for=""
+              ><input
+                class="footer-subscribe-input"
+                name="email"
+                type="email"
+                placeholder="E-mail"
+            /></label>
+          </div>
+
+          <button class="footer-subscribe-btn" type="button">
+            Subscribe
+            <svg class="footer-subscribe-btn-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
 
-    <!-- бекдроп, модельное окно и форма -->
+    <!---------------бекдроп, модельное окно и форма -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button">
           <svg class="modal-button-icon">
@@ -559,6 +583,67 @@
 
           <button class="form-button" type="submit">Send</button>
         </form>
+      </div>
+    </div> -->
+    <!-------------------------мобильное меню -->
+    <div class="mobile-menu">
+      <div class="mobile-container">
+        <button class="mobile-button">
+          <svg class="mobile-button-icon">
+            <use
+              href="./images/icons.svg#icon-close"
+              width="8"
+              heigth="8"
+            ></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mobile-site-nav">
+            <li class="mobile-site-nav-item">
+              <a class="mobile-site-nav-link" href="">Studio</a>
+            </li>
+            <li class="mobile-site-nav-item">
+              <a class="mobile-site-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-site-nav-item">
+              <a class="mobile-site-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile-auth-nav">
+          <li class="mobile-auth-nav-item">
+            <a class="mobile-auth-nav-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-auth-nav-item">
+            <a class="mobile-auth-nav-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-socmedia">
+          <li class="socmedia-svg-bg">
+            <svg class="footer-socmedia-svg">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </li>
+          <li class="socmedia-svg-bg">
+            <svg class="footer-socmedia-svg">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </li>
+          <li class="socmedia-svg-bg">
+            <svg class="footer-socmedia-svg">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </li>
+          <li class="socmedia-svg-bg">
+            <svg class="footer-socmedia-svg">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
