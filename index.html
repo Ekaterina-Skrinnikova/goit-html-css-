@@ -27,7 +27,7 @@
           <a class="logo logo-header" href=""
             >web<span class="logo-span-header">studio</span></a
           >
-          <button class="mobile-btn" type="button">
+          <button class="mobile-btn js-open-menu" type="button">
             <svg class="" width="24" height="24">
               <use href="./images/icons.svg#icon-burger"></use>
             </svg>
@@ -66,7 +66,9 @@
       <!-- секция герой -->
       <section class="hero">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-button" type="button">Order Service</button>
+        <button class="hero-button" type="button" data-modal-open>
+          Order Service
+        </button>
       </section>
 
       <!-- секция характеристик -->
@@ -489,9 +491,9 @@
 
     <!---------------бекдроп, модельное окно и форма -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-button">
+        <button class="modal-button" data-modal-close>
           <svg class="modal-button-icon">
             <use
               href="./images/icons.svg#icon-close"
@@ -584,11 +586,11 @@
           <button class="form-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-------------------------мобильное меню -->
-    <div class="mobile-menu">
+    <div class="mobile-menu js-menu-container">
       <div class="mobile-container">
-        <button class="mobile-button">
+        <button class="mobile-button js-close-menu">
           <svg class="mobile-button-icon">
             <use
               href="./images/icons.svg#icon-close"
@@ -646,5 +648,8 @@
         </ul>
       </div>
     </div>
+
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
